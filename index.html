@@ -1,0 +1,571 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Best IPTV - Live TV & Sports Streaming</title>
+  <meta name="description" content="Watch free live sports, TV channels, movies and natoks. Best IPTV service with premium content.">
+  <link rel="icon" href="https://best-iiptv.com/wp-content/uploads/2024/05/cropped-white-logo-1.png" type="image/x-icon">
+  
+  <!-- Preload important resources -->
+  <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style">
+  
+  <!-- CSS & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Comic+Neue&display=swap" rel="stylesheet" />
+  
+  <style>
+    body {
+      font-family: 'Poppins', 'Comic Neue', sans-serif;
+      background-color: #111;
+      color: white;
+    }
+    .slider-image {
+      transition: opacity 0.8s ease-in-out;
+      height: 200px;
+      object-fit: cover;
+    }
+    .dot.active {
+      background-color: #dc2626;
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #f97316, #ef4444, #ec4899);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .animate-pulse-slow {
+      animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-[#111] text-white">
+  <!-- Telegram Pop-up -->
+  <div id="telegram-popup" class="fixed inset-0 bg-black/70 flex justify-center items-center z-50 animate-fadeIn">
+    <div class="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl max-w-md w-[90%] shadow-2xl animate-popUp">
+      <div class="text-center mb-6">
+        <i class="fab fa-telegram text-4xl text-blue-400 mb-3"></i>
+        <h3 class="text-xl font-bold text-white mb-2">Join Our Telegram Channel</h3>
+        <p class="text-gray-300">Get instant updates on new content, live events and special offers</p>
+      </div>
+      <div class="flex flex-col space-y-3">
+        <a href="https://t.me/rslivetv" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg flex items-center justify-center space-x-2 transition-all">
+          <i class="fab fa-telegram"></i>
+          <span>Join Now</span>
+        </a>
+        <button onclick="document.getElementById('telegram-popup').remove()" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-3 px-6 rounded-lg transition-all">
+          Maybe Later
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-[#1a1a1a] border-b border-red-600 sticky top-0 z-40 shadow-md">
+    <div class="max-w-6xl mx-auto py-3 px-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <img alt="Best IPTV Logo" class="h-10" src="https://best-iiptv.com/wp-content/uploads/2024/05/cropped-white-logo-1.png" />
+        <span class="hidden sm:inline-block font-bold gradient-text text-lg">Best IPTV</span>
+      </div>
+      <div id="clock" class="text-lg font-semibold bg-gray-800 px-3 py-1 rounded-full"></div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 space-y-8 py-4">
+    <!-- Hero Slider -->
+    <section class="relative rounded-xl overflow-hidden shadow-lg">
+      <div class="relative h-[200px] sm:h-[300px]">
+        <img id="slider" class="w-full h-full slider-image" src="https://image.tsports.com/images/mobile_thumbnail/1742534265-IMG_3293.jpeg" alt="Live Sports Streaming" />
+      </div>
+      <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+        <span class="dot w-3 h-3 rounded-full bg-gray-400 cursor-pointer"></span>
+        <span class="dot w-3 h-3 rounded-full bg-gray-400 cursor-pointer"></span>
+        <span class="dot w-3 h-3 rounded-full bg-gray-400 cursor-pointer"></span>
+      </div>
+    </section>
+
+    <!-- Live Events Section -->
+    <section class="bg-[#1a1a1a] border border-gray-800 rounded-2xl p-6 shadow-xl">
+      <div class="flex justify-center mb-6">
+        <button class="flex items-center gap-3 bg-gradient-to-r from-red-600 to-red-800 rounded-full px-6 py-2 text-white text-lg sm:text-xl font-bold hover:shadow-red-500/30 hover:shadow-lg transition-all">
+          <i class="fas fa-broadcast-tower text-white animate-pulse-slow"></i>
+          <span>Live Sports Events</span>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 sm:gap-6">
+        <!-- Sports Channels -->
+        <a href='/toffee1' target='_blank' class="group">
+          <div class="relative w-full aspect-square rounded-full border-2 border-red-600 p-1 bg-gray-900 overflow-hidden flex items-center justify-center shadow-md hover:shadow-red-500/50 transition-all">
+            <img src="toffee1.jpg" alt="Toffee Sports" class="w-full h-full object-cover rounded-full group-hover:opacity-80 transition" />
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <div class="bg-red-600/80 rounded-full p-2">
+                <i class="fas fa-play text-white text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-xs sm:text-sm mt-2 truncate">Toffee 1</p>
+        </a>
+        
+        <a href='/toffee2' target='_blank' class="group">
+          <div class="relative w-full aspect-square rounded-full border-2 border-red-600 p-1 bg-gray-900 overflow-hidden flex items-center justify-center shadow-md hover:shadow-red-500/50 transition-all">
+            <img src="toffee2.jpg" alt="Toffee Sports" class="w-full h-full object-cover rounded-full group-hover:opacity-80 transition" />
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <div class="bg-red-600/80 rounded-full p-2">
+                <i class="fas fa-play text-white text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-xs sm:text-sm mt-2 truncate">Toffee 2</p>
+        </a>
+        
+        <a href='/tsports' target='_blank' class="group">
+          <div class="relative w-full aspect-square rounded-full border-2 border-red-600 p-1 bg-gray-900 overflow-hidden flex items-center justify-center shadow-md hover:shadow-red-500/50 transition-all">
+            <img src="tsports.jpg" alt="TSports" class="w-full h-full object-cover rounded-full group-hover:opacity-80 transition" />
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <div class="bg-red-600/80 rounded-full p-2">
+                <i class="fas fa-play text-white text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-xs sm:text-sm mt-2 truncate">TSports</p>
+        </a>
+        
+        <a href='/stars1' target='_blank' class="group">
+          <div class="relative w-full aspect-square rounded-full border-2 border-red-600 p-1 bg-gray-900 overflow-hidden flex items-center justify-center shadow-md hover:shadow-red-500/50 transition-all">
+            <img src="stars1.jpg" alt="Star Sports" class="w-full h-full object-cover rounded-full group-hover:opacity-80 transition" />
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <div class="bg-red-600/80 rounded-full p-2">
+                <i class="fas fa-play text-white text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-xs sm:text-sm mt-2 truncate">Star Sports</p>
+        </a>
+        
+        <a href='/ptvsports' target='_blank' class="group">
+          <div class="relative w-full aspect-square rounded-full border-2 border-red-600 p-1 bg-gray-900 overflow-hidden flex items-center justify-center shadow-md hover:shadow-red-500/50 transition-all">
+            <img src="ptvsports.jpg" alt="PTV Sports" class="w-full h-full object-cover rounded-full group-hover:opacity-80 transition" />
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <div class="bg-red-600/80 rounded-full p-2">
+                <i class="fas fa-play text-white text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-xs sm:text-sm mt-2 truncate">PTV Sports</p>
+        </a>
+        
+        <a href='/willow' target='_blank' class="group">
+          <div class="relative w-full aspect-square rounded-full border-2 border-red-600 p-1 bg-gray-900 overflow-hidden flex items-center justify-center shadow-md hover:shadow-red-500/50 transition-all">
+            <img src="willow.jpg" alt="Willow TV" class="w-full h-full object-cover rounded-full group-hover:opacity-80 transition" />
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <div class="bg-red-600/80 rounded-full p-2">
+                <i class="fas fa-play text-white text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-xs sm:text-sm mt-2 truncate">Willow TV</p>
+        </a>
+      </div>
+      
+      <!-- View More Button -->
+      <div class="flex justify-center mt-6">
+        <a href="#" class="text-sm text-gray-400 hover:text-white font-medium flex items-center space-x-1 transition">
+          <span>View All Sports Channels</span>
+          <i class="fas fa-chevron-right text-xs"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Live TV Section -->
+    <section class="bg-[#1a1a1a] border border-gray-800 rounded-2xl p-6 shadow-xl">
+      <div class="flex justify-center mb-6">
+        <button class="flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-800 rounded-full px-6 py-2 text-white text-lg sm:text-xl font-bold hover:shadow-blue-500/30 hover:shadow-lg transition-all">
+          <i class="fas fa-tv text-white"></i>
+          <span>Live TV Channels</span>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 sm:gap-6">
+        <!-- TV Channels -->
+        <a href="starjalsha.html" target="_blank" class="group">
+          <div class="relative w-full aspect-square rounded-full border-2 border-blue-600 p-1 bg-gray-900 overflow-hidden flex items-center justify-center shadow-md hover:shadow-blue-500/50 transition-all">
+            <img src="starjalsha.jpg" alt="Star Jalsha" class="w-full h-full object-cover rounded-full group-hover:opacity-80 transition" />
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <div class="bg-blue-600/80 rounded-full p-2">
+                <i class="fas fa-play text-white text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-xs sm:text-sm mt-2 truncate">Star Jalsha</p>
+        </a>
+        
+        <a href='/enter10bangla' target='_blank' class="group">
+          <div class="relative w-full aspect-square rounded-full border-2 border-blue-600 p-1 bg-gray-900 overflow-hidden flex items-center justify-center shadow-md hover:shadow-blue-500/50 transition-all">
+            <img src="enter10bangla.jpg" alt="Enter10 Bangla" class="w-full h-full object-cover rounded-full group-hover:opacity-80 transition" />
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <div class="bg-blue-600/80 rounded-full p-2">
+                <i class="fas fa-play text-white text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-xs sm:text-sm mt-2 truncate">Enter10</p>
+        </a>
+        
+        <a href='/btv' target='_blank' class="group">
+          <div class="relative w-full aspect-square rounded-full border-2 border-blue-600 p-1 bg-gray-900 overflow-hidden flex items-center justify-center shadow-md hover:shadow-blue-500/50 transition-all">
+            <img src="btv.jpg" alt="BTV" class="w-full h-full object-cover rounded-full group-hover:opacity-80 transition" />
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <div class="bg-blue-600/80 rounded-full p-2">
+                <i class="fas fa-play text-white text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-xs sm:text-sm mt-2 truncate">BTV</p>
+        </a>
+        
+        <a href='/atnbangla' target='_blank' class="group">
+          <div class="relative w-full aspect-square rounded-full border-2 border-blue-600 p-1 bg-gray-900 overflow-hidden flex items-center justify-center shadow-md hover:shadow-blue-500/50 transition-all">
+            <img src="atnbangla.jpg" alt="ATN Bangla" class="w-full h-full object-cover rounded-full group-hover:opacity-80 transition" />
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <div class="bg-blue-600/80 rounded-full p-2">
+                <i class="fas fa-play text-white text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-xs sm:text-sm mt-2 truncate">ATN Bangla</p>
+        </a>
+        
+        <a href='/atnnews' target='_blank' class="group">
+          <div class="relative w-full aspect-square rounded-full border-2 border-blue-600 p-1 bg-gray-900 overflow-hidden flex items-center justify-center shadow-md hover:shadow-blue-500/50 transition-all">
+            <img src="atnnews.jpg" alt="ATN News" class="w-full h-full object-cover rounded-full group-hover:opacity-80 transition" />
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <div class="bg-blue-600/80 rounded-full p-2">
+                <i class="fas fa-play text-white text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-xs sm:text-sm mt-2 truncate">ATN News</p>
+        </a>
+        
+        <a href='/jamuna' target='_blank' class="group">
+          <div class="relative w-full aspect-square rounded-full border-2 border-blue-600 p-1 bg-gray-900 overflow-hidden flex items-center justify-center shadow-md hover:shadow-blue-500/50 transition-all">
+            <img src="jamuna.jpg" alt="Jamuna TV" class="w-full h-full object-cover rounded-full group-hover:opacity-80 transition" />
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <div class="bg-blue-600/80 rounded-full p-2">
+                <i class="fas fa-play text-white text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-xs sm:text-sm mt-2 truncate">Jamuna TV</p>
+        </a>
+      </div>
+      
+      <!-- View More Button -->
+      <div class="flex justify-center mt-6">
+        <a href="#" class="text-sm text-gray-400 hover:text-white font-medium flex items-center space-x-1 transition">
+          <span>View All TV Channels</span>
+          <i class="fas fa-chevron-right text-xs"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Movies Section -->
+    <section class="bg-[#1a1a1a] border border-gray-800 rounded-2xl p-6 shadow-xl">
+      <div class="flex justify-center mb-6">
+        <button class="flex items-center gap-3 bg-gradient-to-r from-purple-600 to-purple-800 rounded-full px-6 py-2 text-white text-lg sm:text-xl font-bold hover:shadow-purple-500/30 hover:shadow-lg transition-all">
+          <i class="fas fa-film text-white"></i>
+          <span>Latest Movies</span>
+        </button>
+      </div>
+
+      <div class="flex justify-between items-center mb-4 px-2">
+        <h2 class="font-bold text-white text-xl sm:text-2xl">Popular Bangla Movies</h2>
+        <a href="#" class="text-sm text-gray-400 hover:text-white font-medium flex items-center space-x-1 transition">
+          <span>See All</span>
+          <i class="fas fa-chevron-right text-xs"></i>
+        </a>
+      </div>
+
+      <div id="movie-container" class="flex space-x-4 overflow-x-auto pb-4 scrollbar-hide">
+        <!-- Movies will be loaded here by JS -->
+      </div>
+    </section>
+
+    <!-- Natok/Drama Section -->
+    <section class="bg-[#1a1a1a] border border-gray-800 rounded-2xl p-6 shadow-xl">
+      <div class="flex justify-center mb-6">
+        <button class="flex items-center gap-3 bg-gradient-to-r from-green-600 to-green-800 rounded-full px-6 py-2 text-white text-lg sm:text-xl font-bold hover:shadow-green-500/30 hover:shadow-lg transition-all">
+          <i class="fas fa-theater-masks text-white"></i>
+          <span>Natoks & Dramas</span>
+        </button>
+      </div>
+
+      <div class="flex justify-between items-center mb-4 px-2">
+        <h2 class="font-bold text-white text-xl sm:text-2xl">Popular Bangla Natoks</h2>
+        <a href="#" class="text-sm text-gray-400 hover:text-white font-medium flex items-center space-x-1 transition">
+          <span>See All</span>
+          <i class="fas fa-chevron-right text-xs"></i>
+        </a>
+      </div>
+
+      <div id="natok-container" class="flex space-x-4 overflow-x-auto pb-4 scrollbar-hide">
+        <!-- Natoks will be loaded here by JS -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#1a1a1a] text-white py-8 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="md:col-span-2">
+          <div class="flex items-center space-x-3 mb-4">
+            <img alt="Best IPTV Logo" class="h-10" src="https://best-iiptv.com/wp-content/uploads/2024/05/cropped-white-logo-1.png" />
+            <span class="font-bold text-xl gradient-text">Best IPTV</span>
+          </div>
+          <p class="text-gray-400 mb-6">
+            Watch free live sports, TV channels, movies and natoks. Premium streaming service with the best content from around the world.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <i class="fab fa-facebook-f text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <i class="fab fa-twitter text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <i class="fab fa-instagram text-lg"></i>
+            </a>
+            <a href="https://t.me/rslivetv" target="_blank" class="text-gray-400 hover:text-white transition">
+              <i class="fab fa-telegram text-lg"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Live TV</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Sports</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Movies</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Natoks</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-bold mb-4">Legal</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">DMCA</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Disclaimer</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 mt-8 pt-6 text-center text-gray-500 text-sm">
+        <p>© 2024 Best IPTV. All rights reserved.</p>
+        <p class="mt-1">This service is for educational purposes only.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Clock Functionality
+    const clock = document.getElementById('clock');
+    function updateClock() {
+      const now = new Date();
+      let hours = now.getHours();
+      let minutes = now.getMinutes();
+      let ampm = hours >= 12 ? 'PM' : 'AM';
+      hours = hours % 12;
+      hours = hours ? hours : 12; 
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      clock.innerHTML = `${hours}:${minutes} ${ampm}`;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    // Slider Functionality
+    const images = [
+      "https://image.tsports.com/images/mobile_thumbnail/1742534265-IMG_3293.jpeg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNp-MEy9dYvU2qEe6KdiBQtPUCZorBFJlt7A&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLJ1BwyR76_y-JYfUGiCrUdGVZCGeBpEUZZV3FRBSd3u-DgqRikxajUUE&s=10"
+    ];
+    const slider = document.getElementById('slider');
+    const dots = document.querySelectorAll('.dot');
+    let current = 0;
+
+    function changeSlide() {
+      slider.style.opacity = 0;
+      setTimeout(() => {
+        slider.src = images[current];
+        slider.alt = `Slide ${current + 1}`;
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[current].classList.add('active');
+        slider.style.opacity = 1;
+        current = (current + 1) % images.length;
+      }, 500);
+    }
+    setInterval(changeSlide, 5000);
+    dots[current].classList.add('active');
+    
+    // Dot click functionality
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        current = index;
+        changeSlide();
+      });
+    });
+
+    // Load Movies
+    const movies = [
+      {
+        title: "Borbad Full HD",
+        img: "borbad.jpg",
+        link: "borbad.html"
+      },
+      {
+        title: "Aditya Varma",
+        img: "aditto.jpg",
+        link: "adithya.html"
+      },
+      {
+        title: "A a Premi",
+        img: "premi.jpg",
+        link: "premi.html"
+      },
+      {
+        title: "Tofaan",
+        img: "tofaan.jpg",
+        link: "tofaan.html"
+      },
+      {
+        title: "Priyotoma",
+        img: "priyotoma.jpg",
+        link: "priyotoma.html"
+      },
+      {
+        title: "Hawa",
+        img: "hawa.jpg",
+        link: "hawa.html"
+      }
+    ];
+
+    const movieContainer = document.getElementById("movie-container");
+    movies.forEach(movie => {
+      const card = document.createElement('a');
+      card.href = movie.link;
+      card.target = "_blank";
+      card.className = "flex-shrink-0 w-36 sm:w-44 group";
+      card.innerHTML = `
+        <div class="relative aspect-[2/3] rounded-lg overflow-hidden shadow-lg">
+          <img src="${movie.img}" alt="${movie.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-3 text-white opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition duration-300">
+            <h3 class="font-semibold text-sm sm:text-base truncate">${movie.title}</h3>
+            <div class="flex justify-center mt-2">
+              <div class="bg-red-600 hover:bg-red-700 w-10 h-10 rounded-full flex items-center justify-center transition">
+                <i class="fas fa-play text-sm"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      movieContainer.appendChild(card);
+    });
+
+    // Load Natoks
+    const natoks = [
+      {
+        title: "Haldaa",
+        img: "haldaa.jpg",
+        link: "haldaa.html"
+      },
+      {
+        title: "Notun Bou",
+        img: "natunbou.jpg",
+        link: "natunbou.html"
+      },
+      {
+        title: "Cute Protibeshi",
+        img: "cuteprotibeshi.jpg",
+        link: "cuteprotibeshi.html"
+      },
+      {
+        title: "Buker Moddhye Agun",
+        img: "buker.jpg",
+        link: "buker.html"
+      },
+      {
+        title: "Goriber Bou",
+        img: "goriber.jpg",
+        link: "goriber.html"
+      },
+      {
+        title: "Bhalobasha Zindabad",
+        img: "bhalobasha.jpg",
+        link: "bhalobasha.html"
+      }
+    ];
+
+    const natokContainer = document.getElementById("natok-container");
+    natoks.forEach(natok => {
+      const card = document.createElement('a');
+      card.href = natok.link;
+      card.target = "_blank";
+      card.className = "flex-shrink-0 w-36 sm:w-44 group";
+      card.innerHTML = `
+        <div class="relative aspect-[2/3] rounded-lg overflow-hidden shadow-lg">
+          <img src="${natok.img}" alt="${natok.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-3 text-white opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition duration-300">
+            <h3 class="font-semibold text-sm sm:text-base truncate">${natok.title}</h3>
+            <div class="flex justify-center mt-2">
+              <div class="bg-green-600 hover:bg-green-700 w-10 h-10 rounded-full flex items-center justify-center transition">
+                <i class="fas fa-play text-sm"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      natokContainer.appendChild(card);
+    });
+
+    // Show telegram popup after 5 seconds
+    setTimeout(() => {
+      const popup = document.getElementById('telegram-popup');
+      if (popup && !localStorage.getItem('telegramPopupClosed')) {
+        popup.style.display = 'flex';
+      }
+    }, 5000);
+
+    // Close popup and remember for 1 day
+    document.querySelector('#telegram-popup button').addEventListener('click', () => {
+      document.getElementById('telegram-popup').style.display = 'none';
+      localStorage.setItem('telegramPopupClosed', 'true');
+      // Expire after 1 day
+      setTimeout(() => {
+        localStorage.removeItem('telegramPopupClosed');
+      }, 24 * 60 * 60 * 1000);
+    });
+  </script>
+</body>
+          </html>
